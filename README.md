@@ -5,8 +5,8 @@ This app is a first layout for an Android App. Playing around with Linear-, Real
 
 ### First Version
 
-![alt tag](https://github.com/norisg/android_project_1/app.png)
+![alt tag](https://github.com/norisg/android_project_1/raw/master/app.png)
 
 ### Improved Version
 
-![alt tag](https://github.com/norisg/android_project_1/Improved.png)
+![alt tag](https://github.com/norisg/android_project_1/raw/master/Improved.png)
