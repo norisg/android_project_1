@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    tools:context="com.example.android.project_1_allgau_triathlon.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35. Allgaeu Triathlon 2017 "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textView"
+            android:layout_toRightOf="@+id/allgau_logo"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/allgau_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_allgau_triathlon"
+            android:alpha="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/allgau_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/allgau_triathlon"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        android:layout_weight="4"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@android:color/white"
+        android:padding="15dp">
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/loc_icon"
+            android:layout_margin="0dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Location"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear1"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/prices"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/euro_icon"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"/>
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_gravity="center"
+                android:padding="5dp">
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                 android:text="Classic (1.9km| 85km| 21km)"
+                    android:layout_gravity="left"
+                 android:padding="1dip"
+                    android:layout_weight="1"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_column="1"
+                    android:text="189,00Euro"
+                    android:layout_gravity="right"
+                    android:padding="1dip"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" />
+
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Olymp (1.5km| 40km| 10,5km)"
+                        android:padding="1dip"
+                        android:layout_gravity="left"
+                        />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="71,00Euro"
+                        android:layout_gravity="right"
+                        android:padding="1dip"
+                   />
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Sprint (0.5km| 30km| 5km)"
+                        android:padding="1dip"
+                        android:layout_gravity="left"
+                        />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="55,00Euro"
+                        android:layout_gravity="right"
+                        android:padding="1dip"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear2"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_toRightOf="@+id/time"
+                android:text="20 August 2017"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/Linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Linear4"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/homepage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/http_icon"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/homepage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/homepage"
+            android:text="@string/hompage"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:paddingLeft="5dp"
+
+            />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dtu"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sbr"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

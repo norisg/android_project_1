@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project_1_Allgau_Triathlon</string>
+    <string name="Location"
+            >Immenstadt Allgaeu,South Germany</string>
+    <string name="hompage"
+        >allgaeu-triathlon.de</string>
+</resources>
